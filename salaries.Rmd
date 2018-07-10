@@ -141,6 +141,8 @@ codaSamples <- coda.samples(jagsModel,
                             thin = thinSteps)
 ```
 
+Here, we are using the previously specified JAGS model to fit the data. We should also include a burn-in algorithm to avoid observing the given number of iterations in the initial "adjustment" stage.
+
 ```{r post}
 ## Make a dataframe with the posterior samples
 mcmcChainDF <- data.frame(as.matrix(codaSamples, iters = T, chains = T))
