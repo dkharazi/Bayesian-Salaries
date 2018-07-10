@@ -49,6 +49,8 @@ In our analysis, we should:
 
 ## JAGS Model
 
+Our JAGS model should look like this:
+
 ```
 model {
 
@@ -67,6 +69,8 @@ model {
   tau2 <- pow(prec_tau2, -1)
 }
 ```
+
+And our code should look like this:
 
 ```{r init}
 ## Set the seed
