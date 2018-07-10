@@ -1,0 +1,8 @@
+model
+{
+ for(i in 1:n){
+    price[i] ~ dnorm(theta, prec)
+  }
+  theta ~ dnorm(mu_0, 1/tau2_0)
+  prec ~ dgamma(alpha, beta)
+}
