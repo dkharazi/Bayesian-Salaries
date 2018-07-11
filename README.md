@@ -4,5 +4,5 @@ One way to understand the popularity for certain areas of eductions within unive
 
 ## Variable Descriptions
 
-`Salaries:` The salary of a faculty member.
+- `Salaries:` The salary of a faculty member.
 - `Dept:` The department of a faculty member.
